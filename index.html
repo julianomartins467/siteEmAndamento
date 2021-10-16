@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Turma da Nessa</title>
+        <link rel="stylesheet" href="css/restom.css">
+        <style>
+            body{
+                justify-content: center;
+                display: flex;
+                background-repeat: no-repeat;
+                
+
+                
+                
+            }
+            
+            /*icones da navegação*/
+            .fundo{
+                background-image: url(imagens/fundo.png);
+
+
+            }
+
+            .face{
+                background-image: url(icones/face.png);
+                padding-left: 30px;
+                background-repeat: no-repeat;
+            }
+            .you{
+                background-image: url(icones/youtube.png);
+                padding-left: 30px;
+                background-repeat: no-repeat;
+            }
+            .twitter{
+                background-image: url(icones/twitter.png);
+                padding-left: 30px;
+                background-repeat: no-repeat;
+            }
+            .instagram{
+                background-image: url(icones/insta.png);
+                padding-left: 30px;
+                background-repeat: no-repeat;
+            }
+            .fale{
+                background-image: url(icones/fale.png);
+                padding-left: 30px;
+                background-repeat: no-repeat;
+
+
+            }
+            ul{
+                list-style: none;            
+                margin: 0px;
+                color: black;
+                padding: 10px;
+                background-color: rgba(255, 255, 255, 0.952);
+                text-align: right;
+                align-items: center;
+                text-align: center;
+
+
+            }
+            li{
+                display: inline-block;
+                padding-right: 60px;
+
+
+            }
+            a{
+                text-decoration: none;
+                display: block;
+                color: black;
+                font-family:Arial Black;
+                background-repeat: no-repeat;
+                align-items: center;
+                font-size: 18px;
+                padding-left: 5px;
+                padding-bottom: 11px;
+                text-align: center;
+                margin-top: 6px;
+
+            }
+            div{
+                border: px solid white;
+                margin: 0px;
+                
+            }
+            a:hover{
+
+                color:red;   
+                font-size: 18px;
+            } /*ESTILIZAÇÃO DOS MENUS*/
+
+            .galeria{
+                margin:0 auto;                
+                position: relative;
+                overflow: hidden;
+                height: 400px;
+                align-items: center;
+                border: 2px #e21d1d double;
+                justify-content: center;
+                width: 100%;
+                border-radius: 12px;
+
+
+
+            } /*SLIDESHOW INICIO*/
+
+
+            .foto:nth-child(1){
+
+            }
+            .foto:nth-child(2){
+                animation-delay: 5s; 
+            }
+            .foto:nth-child(3){
+                animation-delay: 10s; 
+
+            }
+            .foto:nth-child(4){
+                animation-delay: 15s; 
+
+            }
+
+            .foto{
+                position: absolute;
+                opacity: 0;
+                animation-name: animacao;
+                animation-duration: 20s;
+                animation-iteration-count: infinite;
+
+
+            }
+            @keyframes animacao{
+                25%{
+                    opacity: 1;
+                    transform: scale(1.1,1.1);
+
+                }
+                50%{
+                    opacity: 0;
+                }
+            } /*SLIDESHOW FIM*/
+
+            .div1{
+                width: 865px;
+                height: 200px;
+                display: flex;
+                justify-content: center;                
+                align-items: center;
+                border: double 0px black;
+                opacity: inherit;
+                margin:0 auto;                
+                position: relative;
+                overflow: hidden;
+            }
+            .divdentro{
+
+                position: relative;
+                align-items: flex-start;
+                border-radius: 50%;
+                margin-top: -100px;
+                height: 100px;
+                width: 200px;
+                background-color: rgb(255, 255, 255);
+            }
+
+         h2 a{
+                color: black;
+                font-size: 40px;
+                text-shadow: 0px 10px 20px black;
+                text-align: center;            
+                margin: auto;
+                font-family: Arial;
+                border-radius: 20px;
+
+            }
+          h2 a:hover{
+                color: rgb(8, 27, 196); 
+                font-size: 42px;
+                text-shadow: 10px 5px 10px blue;
+            }
+            .div2{
+                width: auto;;
+                height: 100px;
+                display: flex;
+                justify-content: center;                
+                align-items: center;
+                background-image: linear-gradient(rgba(190, 35, 113, 0.36), black);
+                color: white;
+                font-size: 30px;
+                border-radius:23px;
+                margin-top: -100px;
+            }
+            .quadrinhos{
+                border: 2px solid black;
+                margin-top: -100px;
+            }
+            
+            
+            .rodape{
+
+                width: 100%;
+                height: 300px;
+              
+                margin-top: 140px;
+                border-radius: 55px;
+                align-items: center;
+                text-align: center;
+                background-color: rgb(247, 240, 240);
+
+            }
+            
+           
+        </style>
+
+    </head>
+    <body>
+        
+        <div class="div">           
+        
+            <header>
+        
+
+                <nav class="linha col-dm-12 col-dg-12 ">
+                   
+                    <ul>
+
+                        <li class="face"><a href="https://www.facebook.com/galerinhadanessa/">Facebook</a></li>
+                        <li class="you"><a href="https://www.youtube.com/channel/UC5o774BZcmDwIQrAp4MT9Ig">Youtube</a></li>       
+                        <li class="twitter"><a href="">Twitter</a></li>
+                        <li class="instagram"><a href="">Instagram</a></li>
+                        <li class="fale"><a href="contato.html">Fale Conosco</a>
+                        </li>
+                    </ul>
+
+                </nav>
+
+            </header>              
+            <section class="galeria">
+                <img class="foto" src="img/foto1.JPG" width="100%"/>
+                <img class="foto" src="img/foto2.JPG" width="100%"/>
+                <img class="foto" src="img/foto3.JPG" width="100%"/>
+                <img class="foto" src="img/foto4.JPG" width="100%"/>
+
+            </section>
+            <section>
+
+
+
+                <div class="linha col-dm-12 col-dg-12 div1 centro">
+
+
+
+
+                    <div class="divdentro col-dm-6 col-dg-6 div1"> 
+                        <h2><a href="www.google.com.br"> VIDEOS</a></h2>
+
+
+
+                    </div>
+                    <div class="divdentro col-dm-6 col-dg-6 div1">
+                        <h2><a href="www.google.com.br"> FOTOS</a></h2>
+
+                    </div>        
+                </div>
+            </section>
+            <article>
+                <div class="col-dm-6 col-dg-6- quadrinhos"><center><img src="fotos/biblia.JPG" height="200%" width="60%"></center> </div>
+                <div class="col-dm-6 col-dg-6- quadrinhos"><center><img src="fotos/biblia.JPG" height="200%" width="60%"></center></div>
+    
+            </article>
+           
+        </div>
+        
+           
+            
+     
+
+
+
+
+    </body>
+</html>
